@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UFT-8" />
+  <!--dublin core-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--metadati DC-->
+  <meta name="DC.Title" content="Scheda di San Alberto carmelitano, inv. 1249, di Luciano Foti">
+  <meta name="DC.Creator" content="Asia Alessio">
+  <meta name="DC.Subject"
+    content="Raccogliere digitalmente le opere presenti nei depositi, luoghi a volte inaccessibili e il cui stato delle opere è discutibile">
+  <meta name="DC.Description"
+    content="L'obiettivo del sito è quello di rendere disponibile online ciò che custodisce il deposito del Museo Regionale di Messina. Nello specifico ci occuperemo del messinese Luciano Foti mettendo alla luce la sua biografia, bibliografie e le opere d'arte a lui attribuite ">
+  <meta name="DC.Publisher" content="Università di Bologna">
+  <meta name="DC.Date" content="23-11-2022">
+  <meta name="DC.Type" content="Sito web">
+  <meta name="DC.Format" content="HTML/CSS/JS">
+  <link rel="DC.Identifier" href="https://github.com/">
+  <meta name="DC.Source" content="Bootstrap">
+  <meta name="DC.Language" content="it">
+  <meta name="DC.Relation" content="?">
+  <link rel="DC.Coverage" href="?">
+  <meta name="DC.Rights" content="?">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style-esame.css" />
+  <link href='https://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+
+  <title>Scheda Catalogo n. 1247 - San Placido</title>
+
+  <link rel="shortcut icon" href="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png">
+
+<style>
+{box-sizing: border-box;}
+
+.img-magnifier-container {
+  position:relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  width: 100px;
+  height: 100px;
+}
+</style>
+
+<script>
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+  img.parentElement.insertBefore(glass, img);
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    e.preventDefault();
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    a = img.getBoundingClientRect();
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+</head>
+
+<body>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:black">
+        <img src="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png" alt="Bootstrap" width="40" height="30"> Museo
+          Regionale di Messina
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color:black">Storia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:black">Deposito</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" style="color:black" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Catalogo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color:black" >Lista</a></li>
+                <li><a class="dropdown-item" href="#" style="color:black">Artisti</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#" style="color:black">Contatti</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Riguardo il progetto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+
+  <div class="container-fluid">
+    <!--Breadcrumbs-->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#" style="color:black">Catalogo deposito</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color:black"><strong>Luciano Foti (1674-1779)</strong></li>
+      </ol>
+    </nav>
+    <div class="container-fluid">
+      <img src="https://i.pinimg.com/originals/f8/25/09/f8250977274c8254e4a6d3dda021970a.jpg" class="card-img" alt="Mappa antica di Messina" height="350">
+      <div class="card-img-overlay">
+        </div>
+      </div>
+   </div> 
+  <hr>
+
+<!--Scheda dell'opera-->
+<section class="img-magnifier-container">
+  <div class="row mb-5">
+    <div class="col-md-5">
+        <h4 class="fw400 fs2">Scheda <strong> Catalogo </strong> inv. 1247</h4>
+        <img id="myimage" src="./img./SanPlacidoFig.Intera.jpg" width="500" height="700">
+    </div>  
+
+ <div class="col-md-7 border bg-light text-dark"> 
+      <h5 class="text-justify mt-2">inv. 1247</h5>
+
+ <ul class="list-group list-group-flush">
+   <li class="list-group-item"><strong>Luciano Foti</strong> (1674-1779)</li>
+   <li class="list-group-item"><em>San Placido</em></li>
+   <li class="list-group-item"><strong>tecnica e materia:</strong> tavola lignea dipinta ad olio</li>
+   <li class="list-group-item"><strong>misure:</strong> cm. 170 x 98</li>
+   <li class="list-group-item"><strong>datazione:</strong> sec. XVIII</li>
+ </ul>
+<hr>
+     <h5>Storia:</h5><br> 
+         <p>Lo storico Gaetano La Corte Cailler scrive un libro nel 1981 dal titolo <em>Il museo civico di Messina</em>, dove menziona due tavole lignee dipinte ad olio rappresentanti i due santi <em>Placido</em> e <em>Alberto</em>.<br>Il primo, che visioniamo attraverso questa scheda, viene così descritto: <q>in piedi, intera figura, con nella destra una palma, e nella sinistra il bacolo</q>. Queste opere, secondo La Corte Cailler, erano conservate al Museo Civico di Messina che venne fondato nel 1806 su richiesta della Reale Accademia Peloritana. Inoltre lo storico asserisce che le due tavole di Luciano Foti vennero esposte nella terza sala, la quale custodiva pitture dei secoli XVII e XVIII. Le due opere vennero successivamente registrate in un inventario datato 1922 dallo storico dell'arte Enrico Mauceri. Il <em>San Placido</em> appare come una <q>tavola segacciata superiormente / in forma / come il tf609. Rappresenta un Santo con falena e bacolo avente accanto un angelo con mitria in mano. Autore ignoto del secolo XVIII di fattura scadente. È alquanto danneggiata</q>. Vengono persino riportate le misure di quest'ultimo: 0,95 x 1,70. Ad ogni modo un altro storico dell'arte di nome Gioacchino Barbera riporterà in un volume i numeri di inventario delle opere: per il <em>San Placido</em> è il 1247, mentre per il <em>Sant'Alberto carmelitano</em> è il 1249. Per quanto riguarda l'aspetto stilistico le due tavole sembrano richiamare lo stile di Polidoro Caldara da Caravaggio, che approdò a Messina nel 1529 e vi rimase sino alla morte. Ma non sono altro che una <q>penetrante imitazione edulcorata alla settecentesca della pittura aspra e quasi monocroma di Polidoro</q>, come scrisse lo studioso Pierluigi Leone de Castris. Una  dimostrazione questa del fatto che sebbene Luciano Foti si ispirò al Caldara a nulla valsero i suoi tentativi di superarlo.</p>
+     
+      <h5>Bibliografia:</h5><br>
+          <p>Gaetano la Corte Cailler, <em>Il museo civico di Messina</em>, Messina 1981;<br> Enrico Mauceri, vol. I consultato presso il museo regionale di Messina;<br> Gioacchino Barbera, <em>Schede di pittura del messinese del Settecento</em>, in Contributi per la conoscenza delle collezioni del museo regionale di Messina, vol. III, Messina 1993;<br> Pierluigi Leone de Castris, <em>Polidoro da Caravaggio fra Napoli e Messina</em>, Roma 1988;</p>
+    </div>
+   </div>
+ </section>
+
+<!--Footer-->
+<div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Credits</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Licenze</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contatti</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; Copyright 2023, Asia Alessio</p>
+    </footer>
+  </div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="#top" title="Torna su"><button type="button" class="btn btn-outline-secondary btn-lg">&uarr;</button></a>
+    </div>  
+        </footer>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!--Bootstrap js-->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+     magnify("myimage", 3);
+    </script>
+
+</body>
+
+</html>

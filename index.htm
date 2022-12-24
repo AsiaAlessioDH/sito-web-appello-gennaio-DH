@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UFT-8"/>
+  <!--Dublin core-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--metadati DC-->
+  <meta name="DC.Title" content="Luciano Foti e le sue opere">
+  <meta name="DC.Creator" content="Asia Alessio">
+  <meta name="DC.Subject"
+    content="Raccogliere digitalmente le opere presenti nei depositi, luoghi a volte inaccessibili e il cui stato delle opere è discutibile">
+  <meta name="DC.Description"
+    content="L'obiettivo del sito è quello di rendere disponibile online ciò che custodisce il deposito del Museo Regionale di Messina. Nello specifico ci occuperemo del messinese Luciano Foti mettendo alla luce la sua biografia, bibliografia e le opere d'arte a lui attribuite ">
+  <meta name="DC.Publisher" content="Università di Bologna">
+  <meta name="DC.Date" content="23-11-2022">
+  <meta name="DC.Type" content="Sito web">
+  <meta name="DC.Format" content="HTML/CSS/JS">
+  <link rel="DC.Identifier" href="https://github.com/">
+  <meta name="DC.Source" content="Bootstrap">
+  <meta name="DC.Language" content="it">
+  <meta name="DC.Relation" content="?">
+  <link rel="DC.Coverage" href="?">
+  <meta name="DC.Rights" content="?">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style-esame.css" />
+  <link href='https://fonts.googleapis.com/css?family=Chonburi' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+
+  <title>Opere catalogate - Luciano Foti</title>
+
+  <link rel="shortcut icon" href="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:black;">
+        <img src="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png" alt="Bootstrap" width="40" height="30">Museo
+          Regionale di Messina
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color:black;">Storia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color:black;">Deposito</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" style="color:black; "role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Catalogo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" style="color:black">Lista</a></li>
+                <li><a class="dropdown-item" href="#" style="color:black">Artisti</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#" style="color:black">Contatti</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Riguardo il progetto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Cerca</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+
+  <div class="container">
+    <!--Breadcrumbs-->
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#" style="color:black">Catalogo deposito</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color:black"><strong>Luciano Foti (1674-1779)</strong></li>
+      </ol>
+    </nav>
+    <div class="card position-relative">
+      <img src="https://normanno.com/N0rm4nn0/wp-content/uploads/2021/02/joan-martines-mappa-messina-antica.png" class="card-img" alt="Mappa antica di Messina">
+      <div class="card-img-overlay">
+        
+        <div class="position-absolute top-50 end-0 translate-middle-y p-5" style="background-color: pink;">
+          <h5 class="card-title">Raccolta del <strong>deposito</strong> <br> del <strong>Museo Regionale di Messina</strong></h5>
+        </div>
+      </div>
+    </div>
+
+    <!--Citazione: Messina la nobile capitale della Sicilia-->
+    <figure class="text-end">
+      <blockquote class="blockquote">
+        <p>Messana Nobile Siciliae Caput.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">da <cite title="Source Title">Antico motto della città, I, 101</cite>
+      </figcaption>
+    </figure>
+    <hr>
+
+    <!--Sezione che illustra il progetto--> 
+    <section>
+      <h3>Scopo del progetto</h3>
+      <p>Il catalogo del <strong>Deposito del Museo Regionale di Messina</strong> è un progetto
+        nato frequentando il corso di <q>Digital Humanities e Patrimonio Culturale</q> dell'Università di Bologna, tenuto dalla Professoressa Francesca Tomasi.<br>Il sito web è rivolto a studenti, studiosi e a chiunque voglia scoprire cosa questi luoghi dimenticati custodiscano, e eventualmente facilitare gli studi a chi vuole portare avanti un percorso di ricerca. I depositi normalmente sono spazi difficili da raggiungere e alle opere che si trovano all'interno spesso non viene garantito un buon stato di tutela e conservazione. Si spera quindi che questo progetto aiuti a smuovere gli animi delle istituzioni e a risolvere definitivamente queste problematiche.</p>
+    </section>
+    
+      <!--Input-->
+      <div class="container">
+      <div class="input-group mb-4">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Artista</button>
+        <input type="text" class="form-control" placeholder="Esempio: Luciano Foti"
+          aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+    
+      <div class="input-group mb-4">
+        <input type="text" class="form-control" placeholder="Esempio: 1247" aria-label="Recipient's username"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Inventario</button>
+      </div>
+    
+      <div class="input-group mb-4">
+        <button class="btn btn-outline-secondary" type="button">Soggetto</button>
+        <input type="text" class="form-control" placeholder="Esempio: San Placido"
+          aria-label="Example text with button addons">
+      </div>
+     </div> 
+   </form>
+   <hr>  
+
+<section>
+  <h4>Chi è Luciano Foti</h4>
+     <p>Il collezionista Agostino Gallo in un suo manoscritto, che vede protagonisti pittori e musicisti siciliani ed esteri, è uno dei primi a citare Luciano Foti riportando brevemente <q>nacque egli in Messina nel 1674 e fu allievo di Placido Calì. Applicossi al ristauro e vi riuscì perfettamente. Fu anche antiquario. Scampato dal contagio del 1743 morì nel 1779</q>. Caio Domenico Gallo, storico e letterato, nel 1758 fa emergere anch’egli in poche parole la figura di Luciano Foti, descritto come pittore e dilettante di antichità e proprietario del famoso libro scritto dal sacerdote cappellano Francesco Susinno dal titolo <em>Le Vite de' Pittori Messinesi</em>, pubblicato nel 1724 . In seguito lo storico Gaetano Grano  in <em>Memorie de’ pittori messinesi</em>, opera che aveva visto anche la collaborazione del pittore Philipp Hackert, trascrive la data di nascita di Luciano Foti, 1649 e il luogo di nascita, Messina. Inoltre lo storico aggiunge che egli fu allievo di Placido Celi e che la sua abilità nel restauro era così grande che era raro che qualcuno potesse superarlo. E ancora Gaetano Grano aggiunge che Luciano Foti sopravvisse per miracolo alla peste del 1743, riuscendo, nonostante l’atmosfera ostile, a raccogliere opere d’arte e restaurarle per poi venderle ai maggiori acquirenti dell’epoca. Per di più egli non era solo pittore, continua  Gaetano Grano, ma un collezionista e pubblico antiquario, quest’ultima carica gli venne conferita dal Senato. Possedeva tra l’altro un’ampia raccolta di disegni e di carte rare che andarono in dote al figlio sacerdote D. Gregorio Foti, quando l’artista morì nel 1779. Lo storico dell'arte Luigi Sarullo nel 1993 mette alla luce un'altra abilità del Foti, ovvero l'essere un copista. Quest'ultima capacità era rivolta soprattutto all'abile Polidoro Caldara da Caravaggio. Per mezzo di una fonte del 1828 sappiamo che il cavaliere Carlo Castone conte della Torre di Rezzonico intraprese un viaggio in Sicilia avendo come accompagnatore il monsignor Grano. Entrambi si recarono a casa del figlio di Luciano Foti ammirando il numero immenso di disegni e stampe che la famiglia Foti possedeva. Il conte dichiarerà che <q>questo buon uomo preferisce Polidoro a Domenichino, e nulla intende nell’arte paterna</q>. 
+     </p>
+</section>     
+     <hr>
+    
+    <!--le tre card delle opere-->
+    <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <img src="./img/SanAlbertoTesta.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Luciano Foti</h5>
+          <p class="card-text">San Alberto carmelitano inv. 1249</p>
+          <p class="card-text"><small class="text-muted">Ultimo aggiornamento un minuto fa</small></p>
+          <a href="item.htm" class="btn btn-success btn-sm active" role="button" aria-pressed="true">Apri scheda</a>
+      </div>
+    </div>
+    <div class="card">
+        <img src="./img/SanPlacidoTesta.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Luciano Foti</h5>
+          <p class="card-text">San Placido inv. 1247</p>
+          <p class="card-text"><small class="text-muted">Ultimo aggiornamento un minuto fa</small></p>
+          <a href="item.htm2.html" class="btn btn-success btn-sm active" role="button" aria-pressed="true">Apri scheda</a>
+        </div>
+      </div> 
+      <div class="card">
+    <img src="./img/DomenicanoDettaglio.png" class="card-img-top" alt="..." width="" height="247">
+    <div class="card-body">
+      <h5 class="card-title">Ignoto</h5>
+      <p class="card-text">Un Santo Domenicano con i simboli della Passione inv. 1238</p>
+      <p class="card-text"><small class="text-muted">Ultimo aggiornamento un minuto fa</small></p>
+      <a href="item.htm3.html" class="btn btn-success btn-sm active" role="button" aria-pressed="true">Apri scheda</a>
+    </div>
+    </div>  
+  </div>
+
+<!--Footer-->
+<div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Credits</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Licenze</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contatti</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; Copyright 2023, Asia Alessio</p>
+
+    <!--Bottone per tornare su-->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="#top" title="Torna su"><button type="button" class="btn btn-outline-secondary btn-lg">&uarr;</button></a>
+    </div>  
+        </footer>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!--Bootstrap js-->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
