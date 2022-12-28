@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collezione xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="Luciano Foti (1674-1779)">
+<item n="1" xml:id="collezione">
+	<genere>tavola lignea dipinta ad olio</genere>
+     <titolo></titolo>
+     <immagine riferimento="./img./PlacidoFig.Intera.jpg"></immagine>
+     
+     <metadati>
+     <dc:title>San Placido inv. 1247</dc:title>
+     <dc:creator>Luciano Foti</dc:creator>
+     <dc:date>sec. XVIII</dc:date>
+     <dc:description>santo che regge con la mano destra una palma e con la sinistra un bacolo. Assistito inoltre da un angelo collocato in basso a sinistra con della mitria fra le mani che gli rivolge uno sguardo serio</dc:description>
+     <dc:type>image</dc:type>
+     <dc:coverage>Messina</dc:coverage>
+     <dc:identifier tipo="">?</dc:identifier>
+     <dc:format>image/jpg</dc:format>
+     <dc:identifier></dc:identifier>
+     <dc:subject>santo</dc:subject>
+     <dc:language>it</dc:language>
+</metadati>
+</item>
+</collezione>

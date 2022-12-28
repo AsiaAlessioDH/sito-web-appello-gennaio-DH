@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collezione xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="Luciano Foti (1674-1779)">
+<item n="1" xml:id="collezione">
+	<genere>tavola lignea dipinta ad olio</genere>
+     <titolo></titolo>
+     <immagine riferimento="./img./SanAlbertoFig.Intera.jpg"></immagine>
+     
+     <metadati>
+     <dc:title>San ALberto carmelitano inv. 1249</dc:title>
+     <dc:creator>Luciano Foti</dc:creator>
+     <dc:date>sec. XVIII</dc:date>
+     <dc:description>santo con abito monacale con mantello bianco, che regge con la mano destra una croce e con la sinistra un libro. Assistito inoltre da un angelo collocato in basso a sinistra con un mazzo di spighe fra le mani</dc:description>
+     <dc:type>image</dc:type>
+     <dc:coverage>Messina</dc:coverage>
+     <dc:identifier tipo="">?</dc:identifier>
+     <dc:format>image/jpg</dc:format>
+     <dc:identifier></dc:identifier>
+     <dc:subject>santo</dc:subject>
+     <dc:language>it</dc:language>
+</metadati>
+</item>
+</collezione>
