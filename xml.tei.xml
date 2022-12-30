@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0" xml:id="Luciano Foti (1674-1779)">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>San Alberto carmelitano inv. 1249</title>
+<author>Luciano Foti</author>
+<respStmt xml:id="Luciano Foti (1674-1779)">
+<resp>creatore del sito-web</resp>
+<name xml:id="Aa">Asia Alessio</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<p>Questo sito è stato realizzato a seguito della frequentazione del corso in Digital Humanities e Patrimonio Culturale tenuto dalla Professoressa Francesca Tomasi, a.a. 2021/22, presso l'Ateneo di Bologna</p>
+</publicationStmt>
+<sourceDesc>
+<p>Il sito-web contiene delle schede catalografiche che descrivono delle opere di mano del messinese Luciano Foti, che si trovano oggi nel deposito del Museo Regionale di Messina. Questa che analizziamo nello specifico è una tavola ad olio che raffigura uno dei patroni di messina, San Alberto carmelitano. Non conosciamo la data esatta in cui è stata fatta ma la collochiamo nel XVIII secolo.</p>
+</sourceDesc>
+</fileDesc>
+</teiHeader>
+<text>
+<front>
+<div type="tipologia">
+<p>Uno dei patroni di Messina</p>
+</div>
+</front>
+<body>
+<choice>
+	<abbr type="title">inv.</abbr>
+	<expand>inventario</expand>
+</choice>	
+</body>
+<back>
+[eventuale materiale annesso]
+<div type="tipologia">
+<p></p>
+</div>
+</back>
+</text>
+</TEI>
