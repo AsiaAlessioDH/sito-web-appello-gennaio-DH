@@ -9,11 +9,11 @@
   <!--metadati DC-->
   <meta name="DC.Title" content="Scheda di San Alberto carmelitano, inv. 1249, di Luciano Foti">
   <meta name="DC.Creator" content="Asia Alessio">
-  <meta name="DC.Subject"
-    content="Raccogliere digitalmente le opere presenti nei depositi, luoghi a volte inaccessibili e il cui stato delle opere è discutibile">
+  <meta name="DC.Subject" content="Raccogliere digitalmente le opere presenti nel deposito del museo di Messina">
   <meta name="DC.Description"
     content="L'obiettivo del sito è quello di rendere disponibile online ciò che custodisce il deposito del Museo Regionale di Messina. Nello specifico ci occuperemo del messinese Luciano Foti mettendo alla luce la sua biografia, bibliografie e le opere d'arte a lui attribuite ">
   <meta name="DC.Publisher" content="Università di Bologna">
+  <meta name="DC.Contributor" content="?">
   <meta name="DC.Date" content="23-11-2022">
   <meta name="DC.Type" content="Sito web">
   <meta name="DC.Format" content="HTML/CSS/JS">
@@ -34,6 +34,21 @@
   <title>Scheda Catalogo n. 1249 - San Alberto carmelitano</title>
 
   <link rel="shortcut icon" href="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png">
+
+  <style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+.header {
+  padding: 10px;
+  text-align: center;
+  background: seagreen;
+  color: white;
+  font-size: 30px;
+}
+.content {padding:20px;}
+</style>
 
 <style>
 {box-sizing: border-box;}
@@ -98,12 +113,17 @@ function magnify(imgID, zoom) {
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-light">
+
+<!--Header-->
+<div class="header">
+  <h3>Deposito del Museo Regionale di Messina <br> preservazione e ricerca</h3>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color:black">
-        <img src="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png" alt="Bootstrap" width="40" height="30"> Museo
-          Regionale di Messina
+      <a class="navbar-brand" href="#" style="color:black;">
+        <img src="https://gdsit.cdn-immedia.net/2015/05/Trinacria.png" alt="Trinacria" width="40" height="30"> Raccolta delle opere
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -113,19 +133,19 @@ function magnify(imgID, zoom) {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color:black">Storia</a>
+              <a class="nav-link active" aria-current="page" href="#" style="color:black;">Storia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="color:black">Deposito</a>
+              <a class="nav-link" href="#" style="color:black;">Deposito</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" style="color:black" role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle" href="#" style="color:black; "role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Catalogo
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" style="color:black" >Lista</a></li>
-                <li><a class="dropdown-item" href="#" style="color:black">Artisti</a></li>
+                <li><a class="dropdown-item" href="catalogo.htm" style="color:black">Lista opere</a></li>
+                <li><a class="dropdown-item" href="#" style="color:black">Biografia</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -144,14 +164,6 @@ function magnify(imgID, zoom) {
       </div>
   </nav>
 
-  <div class="container-fluid">
-    <!--Breadcrumbs-->
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" style="color:black">Catalogo deposito</a></li>
-        <li class="breadcrumb-item active" aria-current="page" style="color:black"><strong>Luciano Foti (1674-1779)</strong></li>
-      </ol>
-    </nav>
     <div class="container-fluid">
       <img src="https://i.pinimg.com/originals/f8/25/09/f8250977274c8254e4a6d3dda021970a.jpg" class="card-img" alt="Mappa antica di Messina" height="350">
       <div class="card-img-overlay">
@@ -165,7 +177,7 @@ function magnify(imgID, zoom) {
   <div class="row mb-5">
     <div class="col-md-5">
         <h4 class="fw400 fs2">Scheda <strong> Catalogo </strong> inv. 1249</h4>
-        <img id="myimage" src="./img./SanAlbertoFig.Intera.jpg" width="500" height="700">
+        <img id="myimage" src="./img./SanAlbertoFig_Intera.jpg" width="500" height="700">
     </div>  
 
  <div class="col-md-7 border bg-light text-dark"> 
@@ -173,18 +185,33 @@ function magnify(imgID, zoom) {
 
  <ul class="list-group list-group-flush">
    <li class="list-group-item"><strong>Luciano Foti</strong> (1674-1779)</li>
-   <li class="list-group-item"><em>San Alberto carmelitano</em></li>
-   <li class="list-group-item"><strong>tecnica e materia:</strong> tavola lignea dipinta ad olio</li>
+   <li class="list-group-item"><em>San <a href="http://wordnetweb.princeton.edu/perl/webwn?s=saint+&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=" class="link-dark" title="Vedi su WordNet" target="_blank"><sup>WordNet</sup></a> Alberto carmelitano</em></li>
+   <li class="list-group-item"><strong>tecnica e materia:</strong> tavola <a href="http://wordnetweb.princeton.edu/perl/webwn?s=panel&sub=Search+WordNet&o2=&o0=1&o8=1&o1=1&o7=&o5=&o9=&o6=&o3=&o4=&h=00000" class="link-dark" title="Vedi su WordNet" target="_blank"><sup>WordNet</sup></a> lignea dipinta ad olio</li>
    <li class="list-group-item"><strong>misure:</strong> cm. 170 x 98</li>
    <li class="list-group-item"><strong>datazione:</strong> sec. XVIII</li>
  </ul>
 <hr>
      <h5>Storia:</h5><br> 
-         <p>Lo storico Gaetano La Corte Cailler scrive un libro nel 1981 dal titolo <em>Il museo civico di Messina</em>, dove menziona due tavole lignee dipinte ad olio rappresentanti i due santi <em>Placido</em> e <em>Alberto</em>.<br>Il secondo, che visioniamo attraverso questa scheda, viene così descritto: <q>in piedi, intera figura, con nella destra una croce, e nella sinistra un libro</q>. Queste opere, secondo La Corte Cailler, erano conservate al Museo Civico di Messina che venne fondato nel 1806 su richiesta della Reale Accademia Peloritana. Inoltre lo storico asserisce che le due tavole di Luciano Foti vennero esposte nella terza sala, la quale custodiva pitture dei secoli XVII e XVIII. Le due opere vennero successivamente registrate in un inventario datato 1922 dallo storico dell'arte Enrico Mauceri. Il <em>San Alberto carmelitano</em> appare come una <q> tavola superiormente setacciata e rappresenta un Santo in abito monacale con mantello bianco, croce nella destra e volume nella sinistra. In basso a sinistra angelo sedente con un mazzo di spighe fra le mani. Autore ignoto del secolo XVIII. Danneggiato</q>. Vengono persino riportate le misure di quest'ultimo: 0,69 x 1,70. Ad ogni modo un altro storico dell'arte di nome Gioacchino Barbera riporterà in un volume i numeri di inventario delle opere: per il <em>San Placido</em> è il 1247, mentre per il <em>Sant'Alberto carmelitano</em> è il 1249. Per quanto riguarda l'aspetto stilistico le due tavole sembrano richiamare lo stile di Polidoro Caldara da Caravaggio, che approdò a Messina nel 1529 e vi rimase sino alla morte. Ma non sono altro che una <q>penetrante imitazione edulcorata alla settecentesca della pittura aspra e quasi monocroma di Polidoro</q>, come scrisse lo studioso Pierluigi Leone de Castris. Una  dimostrazione questa del fatto che sebbene Luciano Foti si ispirò al Caldara a nulla valsero i suoi tentativi di superarlo.</p>
+         <p>Lo storico Gaetano La Corte Cailler scrive un libro nel 1981 dal titolo <em>Il museo civico di Messina <a href="https://pleiades.stoa.org/places/462538" class="link-dark" title="Vedi su Pleiades" target="_blank"><sup>Pleiades</sup></a></em>, dove menziona due tavole lignee dipinte ad olio rappresentanti i due santi <em>Placido</em> e <em>Alberto</em>.<br>Il secondo, che visioniamo attraverso questa scheda, viene così descritto: <q>in piedi, intera figura, con nella destra una croce, e nella sinistra un libro</q>. Queste opere, secondo La Corte Cailler, erano conservate al Museo Civico di Messina che venne fondato nel 1806 su richiesta della Reale Accademia Peloritana. Inoltre lo storico asserisce che le due tavole di Luciano Foti vennero esposte nella terza sala, la quale custodiva pitture dei secoli XVII e XVIII. Le due opere vennero successivamente registrate in un inventario datato 1922 dallo storico dell'arte Enrico Mauceri. Il <em>San Alberto carmelitano</em> appare come una <q> tavola superiormente setacciata e rappresenta un Santo in abito monacale con mantello bianco, croce nella destra e volume nella sinistra. In basso a sinistra angelo sedente con un mazzo di spighe fra le mani. Autore ignoto del secolo XVIII. Danneggiato</q>. Vengono persino riportate le misure di quest'ultimo: 0,69 x 1,70. Ad ogni modo un altro storico dell'arte di nome Gioacchino Barbera riporterà in un volume i numeri di inventario delle opere: per il <em>San Placido</em> è il 1247, mentre per il <em>Sant'Alberto carmelitano</em> è il 1249. Per quanto riguarda l'aspetto stilistico le due tavole sembrano richiamare lo stile di Polidoro Caldara da Caravaggio, che approdò a Messina nel 1529 e vi rimase sino alla morte. Ma non sono altro che una <q>penetrante imitazione edulcorata alla settecentesca della pittura aspra e quasi monocroma di Polidoro</q>, come scrisse lo studioso Pierluigi Leone de Castris. Una  dimostrazione questa del fatto che sebbene Luciano Foti si ispirò al Caldara a nulla valsero i suoi tentativi di superarlo.</p>
      
       <h5>Bibliografia:</h5><br>
           <p>Gaetano la Corte Cailler, <em>Il museo civico di Messina</em>, Messina 1981;<br> Enrico Mauceri, vol. I consultato presso il museo regionale di Messina;<br> Gioacchino Barbera, <em>Schede di pittura del messinese del Settecento</em>, in Contributi per la conoscenza delle collezioni del museo regionale di Messina, vol. III, Messina 1993;<br> Pierluigi Leone de Castris, <em>Polidoro da Caravaggio fra Napoli e Messina</em>, Roma 1988;</p>
     </div>
+  </div>
+</section>
+
+<!--file XML/DC e XML/TEI navigabili-->
+<div class="btn-group">
+  <a href="xml/metadati1.xml" class="btn btn-success">File XML/DC</a>
+  <a href="tei/xml.tei.xml" class="btn btn-secondary">File XML/TEI</a>
+</div>
+<hr>
+
+      <!--link esterno-->
+      <h6><b>Se si desidera fare una visita:</b></h6>
+      <p><a href="https://aditusculture.com/biglietti/sicilia/messina/museo-interdisciplinare-regionale-di-messina" style="color:darkgreen;">Visitare il sito ufficiale del museo di Messina</a> 
+      </p>
+  
 
 <!--Footer-->
 <div class="container">
